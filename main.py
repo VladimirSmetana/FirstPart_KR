@@ -11,7 +11,12 @@ class mywindow(QtWidgets.QMainWindow):
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
 
-
+        self.ui.pushButton_2.clicked.connect(self.exit)
+        self.ui.verticalSlider.valueChanged.connect(self.HlabelSet)
+    def HlabelSet(self):
+        self.ui.Hlabel.setText(str(self.ui.verticalSlider.value()))
+    def exit(self):
+        exit()
 app = QtWidgets.QApplication([])
 application = mywindow()
 application.show()
