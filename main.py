@@ -2,7 +2,7 @@ from PyQt5 import QtWidgets, uic
 
 app = QtWidgets.QApplication([])
 
-ui=uic.LoadUI("mainwindow.ui")
+ui=uic.loadUi("mainwindow.ui")
 
 ui.show()
 
