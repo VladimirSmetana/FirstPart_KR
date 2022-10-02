@@ -10,7 +10,6 @@ class mywindow(QtWidgets.QMainWindow):
         super(mywindow, self).__init__()
         self.ui = Ui_MainWindow()
         self.ui.setupUi(self)
-
         self.ui.pushButton_2.clicked.connect(self.exit)
         self.ui.verticalSlider.valueChanged.connect(self.HlabelSet)
     def HlabelSet(self):
