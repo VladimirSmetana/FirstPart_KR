@@ -12,7 +12,7 @@ class calclass():
         kd = float(application.ui.kd_edit.text())
         altitude = float(application.ui.Hlabel.text())
 
-        #application.ui.lineEdit_14.setText(str(le+delta))
+
 
 
 calculations = calclass()
