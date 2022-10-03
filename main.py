@@ -2,6 +2,7 @@
 from PyQt5 import QtWidgets
 from form import Ui_MainWindow
 import sys
+import math
 
 class calclass():
     def start_calc(self):
@@ -12,6 +13,8 @@ class calclass():
         kf = float(application.ui.kf_edit.text())
         kd = float(application.ui.kd_edit.text())
         altitude = float(application.ui.Hlabel.text())
+        p = altitude + math.pow(6371,2)
+        application.ui.pEdit_9.setText(str(p))
 
 
 

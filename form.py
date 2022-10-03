@@ -341,12 +341,18 @@ class Ui_MainWindow(object):
     def retranslateUi(self, MainWindow):
         _translate = QtCore.QCoreApplication.translate
         MainWindow.setWindowTitle(_translate("MainWindow", "MainWindow"))
+        self.omega_edit.setText(_translate("MainWindow", "1.76"))
         self.label_2.setText(_translate("MainWindow", "Δ, м"))
         self.label.setText(_translate("MainWindow", "Lэ, м"))
         self.label_3.setText(_translate("MainWindow", "q"))
+        self.kd_edit.setText(_translate("MainWindow", "1.2"))
         self.label_5.setText(_translate("MainWindow", "Kf"))
+        self.delta_edit.setText(_translate("MainWindow", "0.15"))
+        self.kf_edit.setText(_translate("MainWindow", "0.25"))
         self.label_6.setText(_translate("MainWindow", "Kd"))
+        self.q_edit.setText(_translate("MainWindow", "0.35"))
         self.label_4.setText(_translate("MainWindow", "𝜔, гр"))
+        self.le_edit.setText(_translate("MainWindow", "1.5"))
         self.label_7.setText(_translate("MainWindow", "H, км:"))
         self.Hlabel.setText(_translate("MainWindow", "250"))
         self.label_28.setText(_translate("MainWindow", "400"))
