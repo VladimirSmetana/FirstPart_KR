@@ -1,3 +1,4 @@
+# pyuic5 mainwindow.ui -o form.py
 from PyQt5 import QtWidgets
 from form import Ui_MainWindow
 import sys
