@@ -21,12 +21,19 @@
     <property name="geometry">
      <rect>
       <x>40</x>
-      <y>30</y>
+      <y>10</y>
       <width>271</width>
-      <height>351</height>
+      <height>371</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="3">
+      <widget class="QLineEdit" name="delta_edit">
+       <property name="text">
+        <string>0.15</string>
+       </property>
+      </widget>
+     </item>
      <item row="3" column="3">
       <widget class="QLineEdit" name="omega_edit">
        <property name="text">
@@ -34,27 +41,10 @@
        </property>
       </widget>
      </item>
-     <item row="1" column="1">
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <pointsize>18</pointsize>
-        </font>
-       </property>
+     <item row="5" column="3">
+      <widget class="QLineEdit" name="kd_edit">
        <property name="text">
-        <string>Δ, м</string>
-       </property>
-      </widget>
-     </item>
-     <item row="0" column="1">
-      <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <pointsize>18</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Lэ, м</string>
+        <string>1.2</string>
        </property>
       </widget>
      </item>
@@ -70,10 +60,41 @@
        </property>
       </widget>
      </item>
-     <item row="5" column="3">
-      <widget class="QLineEdit" name="kd_edit">
+     <item row="0" column="1">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
        <property name="text">
-        <string>1.2</string>
+        <string>Lэ, м</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Δ, м</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="3">
+      <widget class="QLineEdit" name="q_edit">
+       <property name="text">
+        <string>0.35</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QLineEdit" name="kf_edit">
+       <property name="text">
+        <string>0.25</string>
        </property>
       </widget>
      </item>
@@ -86,39 +107,6 @@
        </property>
        <property name="text">
         <string>Kf</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="3">
-      <widget class="QLineEdit" name="delta_edit">
-       <property name="text">
-        <string>0.15</string>
-       </property>
-      </widget>
-     </item>
-     <item row="4" column="3">
-      <widget class="QLineEdit" name="kf_edit">
-       <property name="text">
-        <string>0.25</string>
-       </property>
-      </widget>
-     </item>
-     <item row="5" column="1">
-      <widget class="QLabel" name="label_6">
-       <property name="font">
-        <font>
-         <pointsize>18</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>Kd</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="3">
-      <widget class="QLineEdit" name="q_edit">
-       <property name="text">
-        <string>0.35</string>
        </property>
       </widget>
      </item>
@@ -141,6 +129,37 @@
        </property>
       </widget>
      </item>
+     <item row="5" column="1">
+      <widget class="QLabel" name="label_6">
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Kd</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="3">
+      <widget class="QLineEdit" name="pic_edit">
+       <property name="text">
+        <string>9</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLabel" name="label_8">
+       <property name="font">
+        <font>
+         <pointsize>18</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>lел.п.</string>
+       </property>
+      </widget>
+     </item>
     </layout>
    </widget>
    <widget class="QWidget" name="gridLayoutWidget_2">
@@ -149,7 +168,7 @@
       <x>40</x>
       <y>390</y>
       <width>271</width>
-      <height>201</height>
+      <height>221</height>
      </rect>
     </property>
     <layout class="QGridLayout" name="gridLayout_2">
@@ -273,42 +292,6 @@
      </item>
     </layout>
    </widget>
-   <widget class="QPushButton" name="calc_button">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>430</y>
-      <width>131</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Расчет</string>
-    </property>
-   </widget>
-   <widget class="QPushButton" name="exit_button">
-    <property name="geometry">
-     <rect>
-      <x>360</x>
-      <y>500</y>
-      <width>131</width>
-      <height>61</height>
-     </rect>
-    </property>
-    <property name="font">
-     <font>
-      <pointsize>16</pointsize>
-     </font>
-    </property>
-    <property name="text">
-     <string>Выход</string>
-    </property>
-   </widget>
    <widget class="QWidget" name="gridLayoutWidget_3">
     <property name="geometry">
      <rect>
@@ -320,61 +303,137 @@
     </property>
     <layout class="QGridLayout" name="gridLayout_3">
      <item row="0" column="1">
-      <widget class="QLineEdit" name="BEdit_7"/>
+      <widget class="QLineEdit" name="BEdit_7">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="9" column="1">
-      <widget class="QLineEdit" name="s2Edit_19"/>
+      <widget class="QLineEdit" name="s2Edit_19">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="11" column="1">
-      <widget class="QLineEdit" name="fvzEdit_16"/>
+      <widget class="QLineEdit" name="fvzEdit_16">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="16" column="1">
-      <widget class="QLineEdit" name="d2Edit_23"/>
+      <widget class="QLineEdit" name="d2Edit_23">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="13" column="1">
-      <widget class="QLineEdit" name="rgzEdit_20"/>
+      <widget class="QLineEdit" name="rgzEdit_20">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="14" column="1">
-      <widget class="QLineEdit" name="mEdit_21"/>
+      <widget class="QLineEdit" name="mEdit_21">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="17" column="1">
-      <widget class="QLineEdit" name="LtkEdit_24"/>
+      <widget class="QLineEdit" name="LtkEdit_24">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="6" column="1">
-      <widget class="QLineEdit" name="fekvEdit_11"/>
+      <widget class="QLineEdit" name="fekvEdit_11">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="7" column="1">
-      <widget class="QLineEdit" name="DvzEdit_17"/>
+      <widget class="QLineEdit" name="DvzEdit_17">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="10" column="1">
-      <widget class="QLineEdit" name="frzEdit_15"/>
+      <widget class="QLineEdit" name="frzEdit_15">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="12" column="1">
-      <widget class="QLineEdit" name="rvzEdit_8"/>
+      <widget class="QLineEdit" name="rvzEdit_8">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="8" column="1">
-      <widget class="QLineEdit" name="dEdit_18"/>
+      <widget class="QLineEdit" name="dEdit_18">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="3" column="1">
-      <widget class="QLineEdit" name="NEdit_12"/>
+      <widget class="QLineEdit" name="NEdit_12">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="1" column="1">
-      <widget class="QLineEdit" name="pEdit_9"/>
+      <widget class="QLineEdit" name="pEdit_9">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="4" column="1">
-      <widget class="QLineEdit" name="iEdit_13"/>
+      <widget class="QLineEdit" name="iEdit_13">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="2" column="1">
-      <widget class="QLineEdit" name="TEdit_10"/>
+      <widget class="QLineEdit" name="TEdit_10">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="15" column="1">
-      <widget class="QLineEdit" name="d1Edit_22"/>
+      <widget class="QLineEdit" name="d1Edit_22">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="5" column="1">
-      <widget class="QLineEdit" name="DminEdit_14"/>
+      <widget class="QLineEdit" name="DminEdit_14">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="18" column="1">
-      <widget class="QLineEdit" name="DtkEdit_25"/>
+      <widget class="QLineEdit" name="DtkEdit_25">
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
      </item>
      <item row="0" column="0">
       <widget class="QLabel" name="label_9">
@@ -606,22 +665,74 @@
      </item>
     </layout>
    </widget>
-   <widget class="QLabel" name="img_1">
+   <widget class="QWidget" name="horizontalLayoutWidget">
     <property name="geometry">
      <rect>
-      <x>340</x>
-      <y>30</y>
-      <width>261</width>
-      <height>171</height>
+      <x>320</x>
+      <y>560</y>
+      <width>331</width>
+      <height>51</height>
      </rect>
     </property>
-    <property name="styleSheet">
-     <string notr="true">image: url(images/BG.jpg);
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <widget class="QPushButton" name="calc_button">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Расчет</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QPushButton" name="exit_button">
+       <property name="font">
+        <font>
+         <pointsize>16</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Выход</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QWidget" name="verticalLayoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>319</x>
+      <y>9</y>
+      <width>331</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <layout class="QVBoxLayout" name="verticalLayout_4">
+     <item>
+      <widget class="QLabel" name="img_1">
+       <property name="styleSheet">
+        <string notr="true">
 </string>
-    </property>
-    <property name="text">
-     <string/>
-    </property>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="img_2">
+       <property name="styleSheet">
+        <string notr="true"/>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+    </layout>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -630,7 +741,7 @@
      <x>0</x>
      <y>0</y>
      <width>967</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
