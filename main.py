@@ -18,7 +18,6 @@ class calclass():
 
 
 
-
 calculations = calclass()
 class mywindow(QtWidgets.QMainWindow):
     def __init__(self):
