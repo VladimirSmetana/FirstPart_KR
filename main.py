@@ -19,7 +19,7 @@ class calclass():
         lrme = float(application.ui.le_edit.text())
         lp = float(application.ui.pic_edit.text())
         q = float(application.ui.q_edit.text())
-        delta = float(application.ui.kf_edit.text())
+        delta = float(application.ui.delta_edit.text())
         kf = float(application.ui.kf_edit.text())
         kd = float(application.ui.kd_edit.text())
 
@@ -43,6 +43,27 @@ class calclass():
         d2 = m * d1
         ltk = fekv * kf
         dtk = dmin * kd
+
+
+        B = round(B,3)
+        p = round(p,3)
+        T = round(T,3)
+        N = round(N,3)
+        i = round(i,3)
+        dmin = round(dmin,3)
+        fekv = round(fekv,3)
+        dvz = round(dvz,3)
+        d = round(d,3)
+        s2 = round(s2,3)
+        fgz = round(fgz,3)
+        fvz = round(fvz,3)
+        rgz = round(rgz,3)
+        rvz =round(rvz,3)
+        m = round(m,3)
+        d1 = round(d1,3)
+        d2 = round(d2,3)
+        ltk = round(ltk,3)
+        dtk = round(dtk,3)
 
 
         application.ui.BEdit_7.setText(str(B))
